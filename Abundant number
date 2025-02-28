@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+
+        int a[][] = { {12, 18, 20, 15},
+                        {6, 24, 30, 10},
+                        {8, 16, 28, 14},
+                        {25, 11, 9, 27}};
+       int count = 0;
+        for (int i = 0; i < 4; i++) {
+                    for (int j = 0; j < 4; j++) {
+                        int num = a[i][j];
+                        int sum = 0;
+           for (int d = 1; d <= num / 2; d++) {
+                            if (num % d == 0) {
+                                sum += d;}}
+                        if (sum > num) {
+                            count++;}}}
+        System.out.println("Number of abundant numbers: " + count);
+        int digitCount = count;
+                System.out.println(digitCount % 2 == 0 ? "Yes" : "No");
+            }
+        }
